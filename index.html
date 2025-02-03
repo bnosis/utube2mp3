@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTUBE2MP3 - Home</title>
+    <link rel="icon" href="local/logo.webp">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="nav_placeholder"></div>
+
+    <div class="container">
+        <div class="info" style="margin-top:30px;"><h1>UTUBE2MP3</h1></div>
+        
+        
+        <div class="info"><h2>Enter Youtube URL to convert to MP3</h2></div>
+        <form class="utube_link_form" action="php/process_url.php" method="POST">
+            <input type="text" class="url" name="url" placeholder="Enter URL here..." required>
+            <button type="submit" style="margin: 15px;">Convert</button>
+        </form>
+    </div>
+    
+    <div id="loading-animation" style="text-align: center;"></div>
+    <div id="loading-spinner" style="display:none;">
+        <img src="local/loading.gif" alt="Loading..." style="width: 30px; height: 30px;">
+    </div>
+    <div id="downloadfile" style="text-align: center;"></div>
+
+    <div class="container">
+        <p style="margin: 50px 1%; text-align: justify; max-width: 1000px;">
+                UTUBE2MP3 is your go-to solution for effortlessly 
+            downloading your favorite YouTube videos as high-quality MP3 (audio) files, providing the 
+            ultimate convenience for music lovers, podcast enthusiasts, and content creators alike.
+            Our platform is designed with versatility in mind, ensuring that you can enjoy a seamless 
+            experience on any device, whether you are using a desktop computer, tablet, or smartphone. 
+            UTUBE2MP3 is fully optimized for all screen sizes and operating systems, so you can access 
+            it anytime, anywhere.<br><br>
+            
+                With UTUBE2MP3, there's no need to download additional software or apps, as everything is 
+            done directly through your browser. This not only saves you time but also ensures that 
+            your downloads are secure and hassle-free.<br><br>
+            
+                Whether you're building a playlist, saving your favorite tracks for offline listening, or 
+            extracting audio for your creative projects, UTUBE2MP3 makes the process quick, easy, and 
+            efficient. Explore the endless possibilities and enjoy the freedom to take your favorite audio 
+            content wherever you go!
+            </p>
+        <img src="local/logo.webp" class="logo-home" alt="logo-home" style="max-width: 500px">
+    </div>
+
+    <div id="footer_placeholder"></div>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

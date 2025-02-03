@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTUBE2MP3 - Contact</title>
+    <link rel="icon" href="local/logo.webp">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="nav_placeholder"></div>
+
+    <form id="contactForm" class="contact" action="php/contact_form.php" method="POST">
+        <div class="contact-title"><h2>Contact Us</h2></div>
+        <h3>Need Some Help?</h3>
+        <p class="contact_info">If you're experiencing any issues with the YouTube to MP3 converter, 
+            please don't hesitate to reach out. 
+            Provide detailed information about the problem, 
+            including the URL you tried to convert and any error messages you encountered. 
+            We'll get back to you as soon as possible!
+        </p>
+        
+        <label for="name">Name: <input id="name" name="name" type="text" required/></label>
+        <label for="email">Email: <input id="email" name="email" type="email" required/></label>
+        <label for="message">Message: <textarea id="message" name="message" required></textarea></label>
+        <button type="submit" id="submitBtn">Send Message</button>
+        <div id="loading-spinner" style="display:none;">
+            <img src="local/loading.gif" alt="Loading..." style="width: 30px; height: 30px;">
+        </div>
+        <div id="message-confirmation"></div>
+        
+    </form>
+    
+
+    <div id="footer_placeholder"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
